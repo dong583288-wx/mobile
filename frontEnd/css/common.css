@@ -1,0 +1,88 @@
+.cz_layout {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* 头部 */
+.cz_topban {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #006699;
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+}
+
+.cz_topban .fa-search {
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 3px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.cz_topban .fa-search .mui-scroll-wrapper .mui-scroll {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;;
+}
+
+/* 内容部分 */
+.cz_container {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* 弹性插件的样式 */
+.cz_container .mui-scroll-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.cz_container .mui-scroll-wrapper .mui-scroll {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+}
+
+
+/* 底部菜单栏 */
+.cz_tabs {
+    width: 100%;
+    height: 50px;
+    background-color: #006699;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    line-height: 50px;
+    z-index: 999;
+}
+
+.cz_tabs a {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.cz_tabs .now {
+    color:darkorange;
+}
+
+.cz_tabs a span {
+    display: block;
+    font-size: 12px;
+    padding-top: 5px;
+}

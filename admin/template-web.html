@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>template-web</title>
+</head>
+<body>
+    <!-- <h1>{{ foo }}</h1>
+            <h2>age: {{ bar }}</h2> -->
+
+    <div class="box"></div>
+
+    <script src="./assets/artTemplate/template-web.js"></script>
+
+    <!-- 准备一个模版 -->
+    <script type="text/foo" id="h1">
+        
+
+        {{each target}}
+
+        <h2>age: {{ $data.target[3] }}</h2>
+
+        {{/each}}
+    </script>
+
+    <!-- 数据 -->
+    <script>
+        var data = [1,2,3,4]
+
+        // 调用模版
+        var template = template('h1',{target:data})
+        // console.log(template)
+        var box = document.getElementsByClassName("box")[0]
+        // box.innerHTML = template
+        
+        document.body.innerHTML = template
+    </script>
+</body>
+</html>
